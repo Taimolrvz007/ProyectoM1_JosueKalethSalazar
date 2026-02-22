@@ -118,3 +118,6 @@ cd ProyectoM1_JosueKalethSalazar
    ```
 
 > Cada vez que hagas `git push` a `main`, GitHub Pages actualizará el sitio automáticamente.
+
+## 📸 Vista previa
+![Vista de la app](./assets/preview.jpeg)

@@ -9,7 +9,7 @@ let tooltipTimer;
 
 function colorHex() {
     let numero = Math.floor(Math.random() * 16777215);
-    return '#' + numero.toString(16);
+    return '#' + numero.toString(16).padStart(6, '0');
 }
 
 function colorHSL() {
