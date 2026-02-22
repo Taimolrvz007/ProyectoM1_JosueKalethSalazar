@@ -1,0 +1,144 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #D7CBF5;
+    width: 100%;
+    font-family: cursive;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, #0508d3, #9b02c2);
+    background-size: 200%;
+    padding: 15px;
+    animation: coloresHeader 5s linear infinite;
+}
+
+@keyframes coloresHeader {
+    from { background-position: 0%; }
+    to { background-position: 200%; }
+}
+
+header h1 {
+    color: white;
+    font-family: cursive;
+    font-size: 2rem;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 25px;
+    flex-wrap: wrap;
+}
+
+.controles label {
+    font-family: cursive;
+    font-size: 0.95rem;
+    color: #2a0a4a;
+    font-weight: bold;
+}
+
+.controles button {
+    background: linear-gradient(90deg, #0508d3, #9b02c2);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: cursive;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.controles button:hover {
+    opacity: 0.85;
+}
+
+.controles button:focus-visible {
+    outline: 3px solid #ff0;
+    outline-offset: 3px;
+}
+
+.controles select {
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #9b02c2;
+    background: white;
+    font-family: cursive;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.controles select:focus-visible {
+    outline: 3px solid #0508d3;
+    outline-offset: 3px;
+}
+
+.contenedores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.caja {
+    width: 150px;
+    height: 150px;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    cursor: pointer;
+    transition: transform 0.15s ease;
+}
+
+.caja:hover {
+    transform: scale(1.05);
+}
+
+.caja:focus-visible {
+    outline: 3px solid #ff0;
+    outline-offset: 3px;
+}
+
+.caja span {
+    background: rgba(0,0,0,0.4);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: monospace;
+}
+
+.tooltip {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: #0508d3;
+    color: white;
+    font-family: cursive;
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 999;
+}
+
+.tooltip.visible {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}

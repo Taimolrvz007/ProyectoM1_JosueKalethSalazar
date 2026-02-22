@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Generador de colores</title>
+</head>
+<body>
+    <header>
+        <h1>Generador de colores</h1>
+    </header>
+    <main>
+        <div class="controles">
+            <button id="btnGenerar">Generar colores</button>
+
+            <label for="cantidadCajas">Cantidad de colores</label>
+            <select id="cantidadCajas">
+                <option value="6">6</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+
+            <label for="formato">Formato de color</label>
+            <select id="formato">
+                <option value="hex">HEX</option>
+                <option value="hsl">HSL</option>
+            </select>
+        </div>
+
+        <div class="contenedores" id="contenedores"></div>
+    </main>
+
+    <div class="tooltip" id="tooltip">¡Copiado!</div>
+
+    <script src="main.js"></script>
+</body>
+</html>
