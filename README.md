@@ -44,6 +44,9 @@ ProyectoM1_JosueKalethSalazar/
 - **CSS3** puro (sin frameworks): flexbox, `@keyframes`, transiciones, `:focus-visible`
 - **JavaScript** vanilla (ES6+): manipulación del DOM, Clipboard API, eventos de teclado y mouse
 
+## 📸 Vista previa
+![Vista de la app](./assets/preview.jpeg)
+
 ### Decisiones de diseño
 
 | Decisión | Justificación |
@@ -119,5 +122,3 @@ cd ProyectoM1_JosueKalethSalazar
 
 > Cada vez que hagas `git push` a `main`, GitHub Pages actualizará el sitio automáticamente.
 
-## 📸 Vista previa
-![Vista de la app](./assets/preview.jpeg)
