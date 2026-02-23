@@ -24,6 +24,11 @@ Aplicación web estática e interactiva que genera paletas de colores aleatorias
 4. **Copiar un código de color**  
    Hacé clic sobre cualquier tarjeta (o presioná **Enter** / **Space** con el teclado sobre ella) para **copiar su código al portapapeles**. Aparecerá un mensaje de confirmación en la parte inferior de la pantalla.
 
+## 📸 Vista previa
+![Vista de la app](./assets/preview.jpeg)
+
+## imagen con el flujo principal del sitio
+
 ---
 
 ## ⚙️ Manual Técnico — Decisiones Técnicas
@@ -44,8 +49,7 @@ ProyectoM1_JosueKalethSalazar/
 - **CSS3** puro (sin frameworks): flexbox, `@keyframes`, transiciones, `:focus-visible`
 - **JavaScript** vanilla (ES6+): manipulación del DOM, Clipboard API, eventos de teclado y mouse
 
-## 📸 Vista previa
-![Vista de la app](./assets/preview.jpeg)
+
 
 ### Decisiones de diseño
 
