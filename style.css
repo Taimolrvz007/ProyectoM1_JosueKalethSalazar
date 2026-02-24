@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -7,14 +9,14 @@
 body {
     background-color: #D7CBF5;
     width: 100%;
-    font-family: cursive;
+    font-family: 'Space Mono', monospace;
 }
 
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, #0508d3, #9b02c2);
+    background: linear-gradient(90deg, #0508d3, #9b02c2, #0508d3);
     background-size: 200%;
     padding: 15px;
     animation: coloresHeader 5s linear infinite;
@@ -27,8 +29,10 @@ header {
 
 header h1 {
     color: white;
-    font-family: cursive;
+    font-family: 'Syne', sans-serif;
     font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.05em;
 }
 
 .controles {
@@ -41,7 +45,7 @@ header h1 {
 }
 
 .controles label {
-    font-family: cursive;
+    font-family: 'Space Mono', monospace;
     font-size: 0.95rem;
     color: #2a0a4a;
     font-weight: bold;
@@ -53,13 +57,15 @@ header h1 {
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
-    font-family: cursive;
+    font-family: 'Space Mono', monospace;
     font-size: 1rem;
     cursor: pointer;
+    transition: opacity 0.2s ease, transform 0.15s ease;
 }
 
 .controles button:hover {
     opacity: 0.85;
+    transform: scale(1.03);
 }
 
 .controles button:focus-visible {
@@ -72,7 +78,7 @@ header h1 {
     border-radius: 8px;
     border: 2px solid #9b02c2;
     background: white;
-    font-family: cursive;
+    font-family: 'Space Mono', monospace;
     font-size: 1rem;
     cursor: pointer;
 }
@@ -100,11 +106,24 @@ header h1 {
     padding: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.4);
     cursor: pointer;
-    transition: transform 0.15s ease;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+    animation: aparece 0.3s ease both;
+}
+
+@keyframes aparece {
+    from {
+        opacity: 0;
+        transform: scale(0.85);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .caja:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.35);
 }
 
 .caja:focus-visible {
@@ -118,7 +137,8 @@ header h1 {
     padding: 3px 8px;
     border-radius: 5px;
     font-size: 12px;
-    font-family: monospace;
+    font-family: 'Space Mono', monospace;
+    aria-hidden: true;
 }
 
 .tooltip {
@@ -128,7 +148,7 @@ header h1 {
     transform: translateX(-50%) translateY(10px);
     background: #0508d3;
     color: white;
-    font-family: cursive;
+    font-family: 'Space Mono', monospace;
     font-size: 0.9rem;
     padding: 8px 20px;
     border-radius: 20px;

@@ -11,27 +11,28 @@
         <h1>Generador de colores</h1>
     </header>
     <main>
-        <div class="controles">
-            <button id="btnGenerar">Generar colores</button>
+        <div class="controles" role="group" aria-label="Controles de generación de colores">
 
             <label for="cantidadCajas">Cantidad de colores</label>
-            <select id="cantidadCajas">
+            <select id="cantidadCajas" aria-label="Seleccionar cantidad de colores">
                 <option value="6">6</option>
                 <option value="8">8</option>
                 <option value="9">9</option>
             </select>
 
             <label for="formato">Formato de color</label>
-            <select id="formato">
+            <select id="formato" aria-label="Seleccionar formato de color">
                 <option value="hex">HEX</option>
                 <option value="hsl">HSL</option>
             </select>
+
+            <button id="btnGenerar" aria-label="Generar nueva paleta de colores">Generar colores</button>
         </div>
 
-        <div class="contenedores" id="contenedores"></div>
+        <div class="contenedores" id="contenedores" aria-live="polite" aria-label="Paleta de colores generada"></div>
     </main>
 
-    <div class="tooltip" id="tooltip">¡Copiado!</div>
+    <div class="tooltip" id="tooltip" role="status" aria-live="assertive">¡Copiado!</div>
 
     <script src="main.js"></script>
 </body>

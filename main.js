@@ -43,8 +43,12 @@ function generarColores() {
         const color = formato.value === 'hex' ? colorHex() : colorHSL();
 
         caja.style.backgroundColor = color;
+
+        
         caja.setAttribute('aria-label', `Color ${color}. Presioná Enter para copiar.`);
-        caja.innerHTML = `<span>${color}</span>`;
+
+        
+        caja.innerHTML = `<span aria-hidden="true">${color}</span>`;
 
         caja.addEventListener('click', () => copiarColor(color));
         caja.addEventListener('keydown', (e) => {
@@ -62,6 +66,10 @@ btnGenerar.addEventListener('click', generarColores);
 
 cantidadCajas.addEventListener('change', () => {
     totalCajas = Number(cantidadCajas.value);
+    generarColores();
+});
+
+formato.addEventListener('change', () => {
     generarColores();
 });
 
