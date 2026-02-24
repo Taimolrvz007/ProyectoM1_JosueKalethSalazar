@@ -36,11 +36,25 @@ Aplicación web estática e interactiva que genera paletas de colores aleatorias
 ### Estructura del proyecto
 
 ```
+### Estructura del proyecto
+
+---
 ProyectoM1_JosueKalethSalazar/
-├── index.html    # Estructura semántica de la app
-├── style.css     # Estilos y animaciones
-├── main.js       # Lógica de generación y comportamiento
-└── README.md     # Documentación
+├── assets/                  
+│   └── preview.jpeg         # Vista previa del proyecto
+
+
+├── scripts/                 
+│   └── main.js              # Lógica  dinamica del todo el sitio
+
+
+├── styles/                 
+│   ├── style.css         # Variables CSS (colores, fuentes),@keyframes y transiciones.global
+
+
+├── index.html               # Estructura semántica de la app
+└── README.md                # Documentación
+---
 ```
 
 ### Tecnologías utilizadas
